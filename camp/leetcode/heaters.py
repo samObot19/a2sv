@@ -7,7 +7,6 @@ class Solution:
             min_dist = float('inf')
             while left <= right:
                 mid = left + (right - left)//2
-                print
                 min_dist = min(min_dist, abs(house - heaters[mid]))
                 if heaters[mid] > house:
                     right = mid - 1
